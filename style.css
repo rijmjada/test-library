@@ -1,0 +1,92 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    background-color: gold;
+    color: white;
+}
+
+header h1 {
+    padding-left: .5rem;
+}
+
+.menu-lateral {
+    background-color: bisque;
+    height: 100vh;
+    margin-top: -.5rem;
+}
+
+.row .aside {
+    background-color: blue;
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 95%;
+    width: 100%;
+    position: relative;
+}
+
+.menu-lateral ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    color: olive;
+    font-weight: 600;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.menu-lateral ul li::before {
+    content: "";
+    background-color: lightsalmon;
+    position: absolute;
+    left: .5%;
+    height: 3em ;
+    width: .8rem;
+
+}
+
+.menu-lateral ul li:hover {
+    background-color: olive;
+    color: bisque;
+    cursor: pointer;
+}
+
+.salir:hover {
+    background-color: red !important;
+}
+
+@media (max-width: 576px) { 
+    .menu-lateral ul li {
+       font-size: .5rem;
+    }
+ }
+
+.col-left {
+    background-image: url(imgs/Must-Read-Book-Club-Books-2022.jpg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter:  opacity(80%) sepia(40%);
+    margin-top: -.5rem;
+}
