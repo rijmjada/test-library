@@ -129,3 +129,17 @@ main {
 .change-position-menu {
     left: 0;
 }
+
+.animation-btn {
+    animation: move-btn-Y 1.5s linear infinite;
+
+}
+
+@keyframes move-btn-Y {
+
+    50% {
+        transform: translateY(1rem)
+    }
+   
+}
+
